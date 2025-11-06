@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduRob</title>
+    <title>EduRob - Tabuleiro</title>
+    <link rel="shortcut icon" type="imagex/png" href="robozinho.ico">
     <link rel="stylesheet" href="projeto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -14,9 +15,9 @@
 <body>
     <nav class="navbar  navbar-expand-lg Navbar" >
   <div class="container-fluid">
-    <a class="navbar-brand  d-flex align-items-center" href="siteProjeto.html">
+    <a class="navbar-brand  d-flex align-items-center" href="index.html">
     <img src="robozinho.png" alt="robozinho meo" width="30" height="30" class="me-2">
-      EduRob - Módulo I
+      EduRob - Jogos
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="siteProjeto.html">Menu</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
         <li class="nav-item dropdown">
     <li class="nav-item">
           <a class="nav-link" href="modulo1.html">Módulo I</a>
@@ -36,28 +37,54 @@
     </div>
   </div>
 </nav>
+<main class="container py-5">
 
-<main>
-<!-- FOTOS -->
-<div class="container">
-    <div class="col-12 col-sm-11 col-md-9 col-lg-7 mx-auto">
-      <h3 id="atvRob"class="text-center mt-4">Jogo de tabuleiro 1</h3>
-      <div class="card mt-4">
-      <div class="ratio ratio-16x9">
-        <img src="robozinho.png" class="img-fluid" alt="..."></div>
-        <div class="card h-100 shadow">
-          <div class="card-body">
-          <!--MUDAR DESCRIÇÃO-->
-            <p class="card-text">Nesta atividade, mostramos o processo de como fazer o robô andar, desde a programação dos comandos básicos até os testes de movimentação. Você vai acompanhar passo a passo como configuramos os motores, ajustamos os sensores e utilizamos a lógica de controle para garantir que o robô se desloque de forma eficiente. Uma ótima introdução prática à robótica e à programação!</p>
-          </div>
-        </div>
+  <div class="infjogo">
+    <h1 class="text-center mb-4 mt-4">Tabuleiro de direção</h1>
+    <!--AQ VAI O VIDEO DE EXPLICAÇÃO-->
+    <img src="imagens/Tabuleiro-de-direção.jpg" class="img-fluid fotoAtv shadow rounded" alt="tabuleiro">
+    <div class="textos mt-4">
+      <p><span>Assuntos:</span> Movimento e direção</p>
+      <p><span>Áreas:</span>  Robótica e conhecimentos de localização </p>
+      </div>
+      <div class="textos mt-2">
+      <p><span>Materiais necessários:</span> <ul>
+        <li>Tabuleiros de jogo 14 cm x 14 cm</li>
+        <li>1 Peão por tabuleiro</li>
+        <li>28  Fichas de direção (7 de cada – direita, esquerda, frente e trás)</li>
+        <li>5 Fichas em formato de “X” vermelho</li>
+      </ul></p>
     </div>
-</div>
+    <div class="textos mt-2">
+      <p><span class="titulo">Preparação</span>
+        <ul>
+          <li>Organizar previamente os tabuleiros colocando e separando as fichas para cada jogador</li>
+          <li>Explicar bem as regras do jogo</li>
+        </ul>
+      </p>
+    </div>
+    <div class="textos mt-2">
+      <p><span class="titulo">Regras</span>
+        <ul>
+          <li>Cada tabuleiro terá um único peão</li>
+          <li>As crianças receberam um comando para levar o peão a determinada a um ponto determinado do tabuleiro</li>         
+          <li>Os participantes do jogo deverão formar as sequências que acreditam, a escondida, com as fichas de direção impressas em 3D</li>
+          <li>No final, vence o estudante que acertar a sequência</li>
+        </ul>
+      </p>
+    </div>
+    <div class="textos mt-2">
+      <p><span>Como jogar</span>
+      <ul>
+        <li>O responsável poderá adicionar as fichas em “X”, as quais farão que os alunos tenham que desviar da casa com a ficha, isso gerará níveis de dificuldades</li>
+        <li>Para os alunos do 4º e 5º, podem ser pedidos comandos com numeração de coordenadas, assim os mesmos saberão a localização exata de onde o peão tem que chegar</li>
+        <li>Cada aluno conta quantas pontos conquistou e aquele que tiver mais é o vencedor</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
 </main>
-
-
-
-
 
 <footer class="Rodape text-dark pt-3 pb-2 border-top mt-1 display-flex justify-content-between mt-5">
     <div class="container"> <!-- conteúdo se estica até as bordas da tela -->
@@ -68,7 +95,7 @@
           <h5 class="mb-5"><i>EduRob</i></h5>
 
           <ul class="nav justify-content-between">
-            <li class="nav-item col-md-4 col-sm-4"><a href="siteProjeto.html" class="nav-link p-1 text-muted">Menu</a></li>
+            <li class="nav-item col-md-4 col-sm-4"><a href="index.html" class="nav-link p-1 text-muted">Menu</a></li>
             <li class="nav-item col-md-4 col-sm-4"><a href="modulo1.html" class="nav-link p-1 text-muted">Módulo |   </a></li>
             <li class="nav-item col-md-4 col-sm-4" ><a href="modulo2.html" class="nav-link p-1 text-muted">Módulo ||    </a></li>
            <!--  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li> 
